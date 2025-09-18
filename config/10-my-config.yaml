@@ -1,0 +1,20 @@
+# /etc/netplan/10-my-config.yaml
+# Access Point setup
+# For raspberry pi
+
+network:
+  version: 2
+  renderer: NetworkManager
+  ethernets:
+    eth0:
+      dhcp4: true
+      optional: true
+  wifis:
+    wlan0:
+      dhcp4: true
+      optional: true
+      access-points:
+        "Raspberry":
+          password: "your password here"
+          mode: ap
+

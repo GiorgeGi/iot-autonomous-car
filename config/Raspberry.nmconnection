@@ -1,0 +1,28 @@
+# /etc/NetworkManager/system-connections/MovingFortress.nmconnection
+# keyfile for esp32
+# For raspberry pi
+
+[connection]
+id=Raspberry
+type=wifi
+interface-name=wlan0
+autoconnect=true
+
+[wifi]
+mode=ap
+ssid=Raspberry
+band=bg
+channel=6
+
+[wifi-security]
+key-mgmt=wpa-psk
+proto=rsn
+pairwise=ccmp
+group=ccmp
+psk=88888888
+
+[ipv4]
+method=shared
+
+[ipv6]
+method=ignore
