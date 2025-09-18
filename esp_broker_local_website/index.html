@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fast ESP32 Dashboard</title>
+
+  <!-- External libraries -->
+  <script src="mqtt.min.js"></script>
+  <script src="chart.js"></script>
+  <script src="three.min.js"></script>
+  <script src="STLLoader.js"></script>
+
+  <!-- Our CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>Fast ESP32 Dashboard</h1>
+  </header>
+
+  <main class="container">
+    <!-- ‣ COMPASS BOX (replacing the old Acceleration chart) -->
+    <div class="chart-box">
+      <canvas id="compassCanvas" width="300" height="300"></canvas>
+      <h3>Compass (Yaw Heading)</h3>
+    </div>
+
+    <!-- Temperature Chart (unchanged) -->
+    <div class="chart-box">
+      <canvas id="tempChart"></canvas>
+      <h3>Temperature</h3>
+    </div>
+
+    <!-- Orientation Chart (unchanged) -->
+    <div class="chart-box">
+      <canvas id="orientationChart"></canvas>
+      <h3>Orientation (Pitch / Roll / Yaw)</h3>
+    </div>
+
+    <!-- 3D Model View (unchanged) -->
+    <div class="three-box">
+      <canvas id="three-canvas"></canvas>
+      <h3>3D Model View</h3>
+    </div>
+  </main>
+
+  <!-- Our JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
