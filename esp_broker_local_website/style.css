@@ -1,0 +1,105 @@
+/* ---------- Global Reset & Base Styles ---------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+  line-height: 1.4;
+}
+
+/* ---------- Header ---------- */
+
+header {
+  background-color: #ffffff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px 0;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  color: #222;
+}
+
+/* ---------- Main Container ---------- */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  padding: 0 10px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ---------- Chart & 3D Boxes ---------- */
+
+.chart-box,
+.three-box {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 15px;
+  text-align: center;
+  flex: 1 1 300px;  /* flexible width, min 300px */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.chart-box canvas,
+.three-box canvas {
+  width: 100%;
+  height: auto;
+  max-width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 8px;
+}
+
+.chart-box h3,
+.three-box h3 {
+  font-size: 1rem;
+  margin-top: 4px;
+  color: #555;
+}
+
+/* Ensure compassCanvas stays square and doesn’t get stretched vertically */
+#compassCanvas {
+  width: 300px !important;
+  height: 300px !important;
+  max-width: none;
+  border: none; /* optional—remove border if you prefer */
+}
+
+/* ---------- Responsive Tweaks ---------- */
+
+/* Make everything stack and shrink on narrow (≤ 600px) screens */
+@media screen and (max-width: 600px) {
+  /* 1) Cards go 100% width (stack vertically) */
+  .chart-box,
+  .three-box {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  /* 2) Shrink chart canvases to ~200px tall */
+  .chart-box canvas {
+    height: 200px !important;   /* override any JS-set height */
+    max-width: 100%;
+  }
+
+  /* 3) Shrink the 3D canvas to 200×200 */
+  #three-canvas {
+    width: 200px !important;
+    height: 200px !important;
+  }
+
