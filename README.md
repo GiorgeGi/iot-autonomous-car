@@ -60,6 +60,8 @@ iot-autonomous-car/
 ├── diagrams/                 # Architecture and system diagrams
 ├── esp_broker_local_website/ # Local web interface and broker
 ├── ros2_nodes/               # ROS 2 nodes for sensing and control
+├── LICENSE
+├── README.md
 ```
 
 ---
