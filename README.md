@@ -4,6 +4,8 @@ A miniature autonomous car project combining IoT, robotics, and edge computing.
 The system integrates sensors, an ESP32, Raspberry Pi, ROS 2 (micro-ROS), and MQTT,  
 with remote monitoring through a lightweight web dashboard.
 
+---
+
 ## Table of Contents
 
 - [Introduction](#introduction)  
@@ -20,6 +22,7 @@ with remote monitoring through a lightweight web dashboard.
 - [Contributing](#contributing)  
 - [Contact](#contact)
 
+---
 
 ## Introduction
 
@@ -27,6 +30,7 @@ The IoT Autonomous Car demonstrates a functional prototype of an autonomous vehi
 It combines edge computing and IoT to provide real-time sensing, decision making, and control.  
 The project includes both autonomous navigation and manual control via a web interface.
 
+---
 
 ## Features
 
@@ -36,6 +40,7 @@ The project includes both autonomous navigation and manual control via a web int
 - Remote access for configuration and monitoring  
 - ROS 2 integration for sensor fusion and higher-level tasks  
 
+---
 
 ## Architecture
 
@@ -45,6 +50,7 @@ The project includes both autonomous navigation and manual control via a web int
 4. **Web Dashboard** – Browser-based visualization of live data.  
 5. **Raspberry Pi** – Acts as an access point and local host for ROS / broker.  
 
+---
 
 ## Repository Structure
 
@@ -55,6 +61,8 @@ iot-autonomous-car/
 ├── esp_broker_local_website/ # Local web interface and broker
 ├── ros2_nodes/               # ROS 2 nodes for sensing and control
 ```
+
+---
 
 ## Getting Started
 
@@ -76,6 +84,7 @@ iot-autonomous-car/
 4. Configure Raspberry Pi networking (AP mode).  
 5. Launch web dashboard locally for monitoring.  
 
+---
 
 ## Networking & Remote Access
 
@@ -97,6 +106,7 @@ iot-autonomous-car/
   ssh username@x.x.x.x
   ```
 
+---
 
 ## MQTT Broker Setup
 
@@ -130,6 +140,7 @@ iot-autonomous-car/
 For secure deployment:  
 [How to set up a Mosquitto MQTT broker securely](https://medium.com/gravio-edge-iot-platform/how-to-set-up-a-mosquitto-mqtt-broker-securely-using-client-certificates-82b2aaaef9c8)
 
+---
 
 ## Web Dashboard
 
@@ -147,6 +158,7 @@ For secure deployment:
 
 - Dashboard connects to MQTT broker over WebSockets.  
 
+---
 
 ## Raspberry Pi as Access Point
 
@@ -161,7 +173,7 @@ Two approaches can be used: **Netplan** or **NetworkManager**.
 - SSID: `MovingFortress`  
 - Password: `1234567890`  
 
-
+---
 
 ## ROS & Docker
 
@@ -183,12 +195,13 @@ Two approaches can be used: **Netplan** or **NetworkManager**.
 
 - ROS nodes in Docker share the same network as the Raspberry Pi.  
 
+---
 
 ## License
 
 This project is licensed under the **GNU General Public License v3.0 or later**.  
 
-
+---
 
 ## Contributing
 
@@ -197,9 +210,11 @@ Contributions are welcome!
 - Document configuration changes.  
 - Add diagrams or tests where possible.  
 
-
+---
 
 ## Contact
 
 **Author**: Giorgos Varvarigos  
 **GitHub**: [GiorgeGi](https://github.com/GiorgeGi)  
+
+---
