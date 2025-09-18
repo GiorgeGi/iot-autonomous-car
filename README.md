@@ -172,8 +172,8 @@ Two approaches can be used: **Netplan** or **NetworkManager**.
 - Alternatively, configure with `nmcli` commands to create and activate AP profile.  
 
 **Default setup**  
-- SSID: `MovingFortress`  
-- Password: `1234567890`  
+- SSID: `name`  
+- Password: `88888888`  
 
 ---
 
