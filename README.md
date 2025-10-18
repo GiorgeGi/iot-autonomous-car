@@ -9,7 +9,6 @@ with remote monitoring through a lightweight web dashboard.
 Giorgos Varvarigos ([GiorgeGi](https://github.com/GiorgeGi)) <br>
 Bill Toumpas ([@billtgr](https://github.com/billtgr)) 
 
-
 ---
 ## Table of Contents
 
