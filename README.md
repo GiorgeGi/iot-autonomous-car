@@ -5,7 +5,12 @@ The system integrates sensors, an ESP32, Raspberry Pi, ROS 2 (micro-ROS), and MQ
 with remote monitoring through a lightweight web dashboard.
 
 ---
+## Contributors
+Giorgos Varvarigos ([GiorgeGi](https://github.com/GiorgeGi)) <br>
+Bill Toumpas ([@billtgr](https://github.com/billtgr)) 
 
+
+---
 ## Table of Contents
 
 - [Introduction](#introduction)  
