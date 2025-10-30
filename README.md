@@ -8,6 +8,7 @@ with remote monitoring through a lightweight web dashboard.
 ## Contributors
 Giorgos Varvarigos ([GiorgeGi](https://github.com/GiorgeGi)) <br>
 Bill Toumpas ([@billtgr](https://github.com/billtgr)) 
+Antonios Thomas
 
 ---
 ## Table of Contents
